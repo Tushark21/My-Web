@@ -1,0 +1,74 @@
+.App {
+  text-align: center;
+  font-family: Roboto;
+  background-image: linear-gradient(-225deg, #77FFD2 0%, #6297DB 48%, #1EECFF 100%);
+}
+
+.card_class{
+  border-radius: 4px;
+  align-content: center;
+  background-color: #00000020;
+  margin: 15px;
+  padding: 10px;
+}
+
+.ticket_class{
+  font-size: 18px;
+  color:white;
+  background-color: #00000020;
+  border-radius: 3px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 5px;
+  width: 110px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.ticket_class:hover{
+  color: black;
+  text-align: right;
+}
+
+p{
+  font-size: 18px;
+}
+
+li{
+  padding: 10px;
+}
+
+h2{
+  text-align: left;
+  margin: 10px;
+}
+
+h4{
+  border-bottom: #000;
+  text-align: left;
+}
+
+h1{
+  padding: 10px;
+  color: #000;
+}
+
+.sub_heading_class{
+  color:black;
+  text-align: left;
+  white-space: nowrap;
+}
+
+img{
+  border-radius: 5px;
+}
+
+hr{
+  background-color: #000;
+}
+
+.me{
+  background-image: url('./assets/plane.gif');
+}
