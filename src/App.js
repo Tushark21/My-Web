@@ -113,7 +113,7 @@ function App() {
           src: 'react-logo.png'
         }
       ]
-    },
+    },/*
     {
       catogery: "Research Interests",
       skills: [
@@ -130,7 +130,7 @@ function App() {
           src: 'react-logo.png'
         }
       ]
-    }
+    }*/
   ];
 
   const projectList = [
@@ -139,6 +139,14 @@ function App() {
       points: ['Contiguous Memory Allocation Simulation for Comparing standard Memory Allocation Algorithms.',
         'Modified Worst Fit Memory Allocation Algorithm and Implemented it along with First Fit and Worst Fit Algorithm.'],
       techStack: ['C++'],
+      src: "search_engine.gif",
+      link: "https://www.github.com"
+    },
+    {
+      project: "Plane Buster",
+      points: ['Focused Crawler with searching functionality like a Search Engine.',
+        'Implemented Fish Search Algorithm for Crawling and Web Indexing.'],
+      techStack: ['Python', 'Pygame'],
       src: "plane.gif",
       link: "https://www.github.com"
     },
@@ -147,7 +155,7 @@ function App() {
       points: ['Focused Crawler with searching functionality like a Search Engine.',
         'Implemented Fish Search Algorithm for Crawling and Web Indexing.'],
       techStack: ['Python', 'BeautifulSoup', 'SQL', 'TkInter'],
-      src: "osa.gif",
+      src: "crawler.gif",
       link: "https://www.github.com"
     },
     {
@@ -155,7 +163,15 @@ function App() {
       points: ['Semantic Parser based on LR Parsing Scheme to Parse and extract the meaning of an Input string.',
         'Validates the Syntax of string according to the given Grammar and gives its meaning.'],
       techStack: ['Java', 'SQL', 'JDBC'],
-      src: "car.gif",
+      src: "parser.gif",
+      link: "https://www.github.com"
+    },
+    {
+      project: "Maryo Game",
+      points: ['Focused Crawler with searching functionality like a Search Engine.',
+        'Implemented Fish Search Algorithm for Crawling and Web Indexing.'],
+      techStack: ['Python', 'Pygame'],
+      src: "maryo.gif",
       link: "https://www.github.com"
     },
     {
@@ -163,7 +179,7 @@ function App() {
       points: ['Developed an Online Shopping Application as a Java Project at CMS IT Institute.',
         'Used Java Core and OOPs concepts to build a Shopping Application integrated with database using JDBC.'],
       techStack: ['Java', 'SQL', 'JDBC'],
-      src: "osa.gif",
+      src: "buykart.gif",
       link: "https://www.github.com"
     }
   ];
