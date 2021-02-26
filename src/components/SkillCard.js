@@ -12,7 +12,7 @@ class SkillCard extends React.Component {
                 </h2>
                 <hr></hr>
                 <div className="row justify-content-md-center">
-                    {this.props.dataObject.skills.map((skill) => <div width='130px' height='130px'><Col><SquareCard skillObject={skill} /></Col></div>)}
+                    {this.props.dataObject.skills.map((skill) => <div key={skill.key} style={{margin: '20px'}}><Col><SquareCard skillObject={skill} /></Col></div>)}
                 </div>
             </div>
         );

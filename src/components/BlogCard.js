@@ -5,7 +5,7 @@ class BlogCard extends React.Component {
 
     render() {
         return (
-            <Card text='dark' border='dark' style={{ backgroundColor: '#ffffff88', width: '18rem', margin: '10px', borderRadius: '10px' }}>
+            <Card text='dark' border='dark' style={{ backgroundColor: '#ffffff88', width: '18rem', margin: '15px', borderRadius: '10px' }}>
                 <Card.Img variant="top" style={{borderTopRightRadius: '10px', borderTopLeftRadius: '10px', borderBottomLeftRadius: '0px', borderBottomRightRadius: '0px' }} src={require('../assets/' + this.props.dataObject.src).default} />
                 <Card.Body>
                     <Card.Title style={{fontWeight: 'bold'}}>{this.props.dataObject.title}</Card.Title>

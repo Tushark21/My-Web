@@ -7,14 +7,86 @@
   }
 }
 
+@keyframes skew {
+  from {
+    transform: skewX(0deg);
+  }
+  to {
+    transform: skewX(360deg);
+  }
+}
+
+/* matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY())*/
+
+@keyframes anim {
+  0% {transform: matrix(1, 0, 0, 1, 0, 0);}
+  20% {transform: matrix(1.5, 0, 0, 1.5, 20, 0);}
+  40% {transform: matrix(1.5, 0, 0, 1.5, 0, 20);}
+  60% {transform: matrix(1, 0, 0, 1, -20, 0);}
+  80% {transform: matrix(1, 0, 0, 1, 0, -20);}
+  100% {transform: matrix(1, 0, 0, 1, 0, 0);}
+}
+
+@keyframes rotate3D {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes beat {
+  0% {transform: matrix(1, 0, 0, 1, 0, 0);}
+  25% {transform: matrix(1.1, 0, 0, 1.1, 0, 0);}
+  50% {transform: matrix(1.2, 0, 0, 1.2, 0, 0);}
+  75% {transform: matrix(1.1, 0, 0, 1.1, 0, 0);}
+  100% {transform: matrix(1, 0, 0, 1, 0, 0);}
+}
+
+@keyframes reverse-spin{
+from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes flip {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(30deg);
+  }
+}
+
 .spin_class{
-  animation: spin infinite 5s linear;
+  animation: spin infinite 4s linear;
+}
+
+.beat_class{
+  animation: beat infinite 4s linear;
+}
+
+.reverse_spin_class{
+  animation: reverse-spin infinite 4s linear;
+}
+
+.rotate_3d_class{
+  animation: rotate3D infinite 4s linear;
+}
+
+.flip_class{
+  animation: flip infinite 1s linear;
 }
 
 .App {
   text-align: center;
   font-family: Roboto;
   background-image: linear-gradient(-225deg, #77FFD2 0%, #6297DB 48%, #1EECFF 100%);
+  min-width: 400px;
 }
 
 .card_class{
@@ -38,19 +110,25 @@
   width: 110px;
   text-align: left;
   white-space: nowrap;
+  transition-property: color;
+  transition-property: all;
+  transition-duration: 1s;  
 }
 
 .ticket_class:hover{
   color: black;
   text-align: right;
+  animation: flip 0.3s linear;
+  animation-fill-mode: forwards; 
 }
 
 p{
   font-size: 18px;
 }
 
-li{
-  padding: 10px;
+ul{
+  text-align: left;
+  font-size: 18px;
 }
 
 h2{
@@ -78,10 +156,45 @@ img{
   border-radius: 5px;
 }
 
+
 hr{
   background-color: #000;
 }
 
 .me{
-  background-image: url('./assets/plane.gif');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+}
+
+Nav{
+  font-weight: bold;
+}
+
+
+.square_class{
+  background-image: url('./assets/crystal.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color:black;
+  text-shadow: 0px 0px 10px rgb(255, 255, 255);
+}
+
+.icon{
+  background-image: url('./assets/board.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color:black;
+  display: block;
+  text-shadow: 0px 0px 10px rgb(255, 255, 255);
+}
+
+.footer_class{
+  background-color: #000;
+  height: 100px;
+  padding: 10px;
+  color: white;
 }

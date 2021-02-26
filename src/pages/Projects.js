@@ -1,20 +1,14 @@
 import React from 'react';
+import PrimaryLayout from '../Layouts/PrimaryLayout';
 import ProjectCard from '../components/ProjectCard';
 
 
 class Projects extends React.Component {
     render() {
         return (
-            <div>
-                <h1>PROJECTS</h1>
-                <div className="container">
-                    <div className="row justify-content-md-center">
-                        <div className="col-12">
-                            {this.props.dataList.map((project) => <ProjectCard dataObject={project} />)}
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <PrimaryLayout heading={'PROJECTS'}>
+                {this.props.dataList.map((project) => <ProjectCard key={project.key} dataObject={project} />)}
+            </PrimaryLayout>
         );
     }
 }
