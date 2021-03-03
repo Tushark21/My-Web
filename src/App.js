@@ -445,31 +445,31 @@ function App() {
       {
         key: 1,
         title: 'Dijkstra\'s Algorithm',
-        src: 'euclidean-gcd-algorithm.jpeg',
+        src: 'https://www.manishsundriyal.com/static/b25ed62fb304d89ddf4ec6cb8d561632/c64b3/dijkstra-algorithm.webp',
         link: 'https://www.manishsundriyal.com/dijkstra-algorithm'
       },
       {
         key: 2,
         title: 'Sieve of Eratosthenes',
-        src: 'sieve-of-eratosthenes.jpeg',
+        src: 'https://www.manishsundriyal.com/static/e1248839933d4f0af364cad7a3680436/c64b3/asymptotic-notations.webp',
         link: 'https://www.manishsundriyal.com/dijkstra-algorithm'
       },
       {
         key: 3,
         title: 'Fast Exponentiation',
-        src: 'fast-exponentiation.jpeg',
+        src: 'https://www.manishsundriyal.com/static/e1248839933d4f0af364cad7a3680436/c64b3/asymptotic-notations.webp',
         link: 'https://www.manishsundriyal.com/dijkstra-algorithm'
       },
       {
         key: 4,
         title: 'Euclidean\'s GCD Algorithm',
-        src: 'euclidean-gcd-algorithm.jpeg',
+        src: 'https://www.manishsundriyal.com/static/e1248839933d4f0af364cad7a3680436/c64b3/asymptotic-notations.webp',
         link: 'https://www.manishsundriyal.com/dijkstra-algorithm'
       },
       {
         key: 5,
         title: 'Dijkstra\'s Algorithm',
-        src: 'euclidean-gcd-algorithm.jpeg',
+        src: 'https://www.manishsundriyal.com/static/b25ed62fb304d89ddf4ec6cb8d561632/c64b3/dijkstra-algorithm.webp',
         link: 'https://www.manishsundriyal.com/dijkstra-algorithm'
       }
     ]
@@ -487,7 +487,7 @@ function App() {
           <Route path="/activities" exact component={() => <Activities dataList={activities} />} />
         </Switch>
       </Router>
-      <Footer />
+      <Footer dataList={meObject}/>
 
     </div>
   );

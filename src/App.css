@@ -194,7 +194,8 @@ Nav{
 
 .footer_class{
   background-color: #000;
-  height: 100px;
+  min-height: 80px;
+  display: block;
   padding: 10px;
   color: white;
 }

@@ -7,9 +7,12 @@ class Footer extends React.Component {
         return (
             <div className='footer_class'>
                 <Container >
-                    
-                    <Row bg='dark' className="row justify-content-end" style={{marginTop: '48px'}}>
-                        
+
+                    <Row className="row justify-content-md-end" >
+                        {this.props.dataList.profiles.map((data) => <a key={data.key} href={data.link} target='_blank'>
+                            <p style={{width: '100px', margin: '5px', padding: '4px', fontSize: '16px', backgroundColor: '#66b3ff', color: 'black' }}>{data.text}</p>
+                        </a>)}
+
                     </Row>
                 </Container>
             </div >
