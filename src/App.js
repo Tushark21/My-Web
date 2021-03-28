@@ -184,7 +184,7 @@ function App() {
         }
       ],
       src: "memory-simulator.gif",
-      link: "https://www.github.com"
+      link: "https://github.com/Tushark21/Simple-C-/blob/master/Memory%20Allocation%20Simulation.cpp"
     },
     {
       key: 2,
@@ -209,7 +209,7 @@ function App() {
         }
       ],
       src: "plane.gif",
-      link: "https://www.github.com"
+      link: "https://github.com/Tushark21/Games/tree/master/Play%20Python/Plane%20Buster"
     },
     {
       key: 3,
@@ -243,7 +243,7 @@ function App() {
         }
       ],
       src: "crawler.gif",
-      link: "https://www.github.com"
+      link: "https://github.com/Tushark21/Focused-Crawler"
     },
     {
       key: 4,
@@ -273,7 +273,7 @@ function App() {
         }
       ],
       src: "parser.gif",
-      link: "https://www.github.com"
+      link: "https://github.com/Tushark21/Semantic-Parser"
     },
     {
       key: 5,
@@ -299,7 +299,7 @@ function App() {
         }
       ],
       src: "typing.gif",
-      link: "https://www.github.com"
+      link: "https://github.com/Tushark21/Typing-Software"
     },
     {
       key: 6,
@@ -325,7 +325,7 @@ function App() {
         }
       ],
       src: "maryo.gif",
-      link: "https://www.github.com"
+      link: "https://github.com/Tushark21/Games/tree/master/Play%20Python/Mario"
     },
     {
       key: 7,
@@ -355,7 +355,7 @@ function App() {
         }
       ],
       src: "buykart.gif",
-      link: "https://www.github.com"
+      link: "https://github.com/Tushark21/Online-Shopping-Application"
     }
   ];
 
@@ -370,7 +370,7 @@ function App() {
         {
           key: 1,
           text: 'ACM ICPC 2018',
-          link: 'https://www.codechef.com/certificates/public/8f7a3da'
+          link: 'https://drive.google.com/drive/my-drive'
         }
       ]
     },
@@ -438,7 +438,7 @@ function App() {
       {
         key: 3,
         text: 'Medium',
-        link: 'https://github.com/Tushark21'
+        link: 'https://medium.com/@tushargautamk21'
       }
     ],
     blogs: [
@@ -464,12 +464,6 @@ function App() {
         key: 4,
         title: 'Euclidean\'s GCD Algorithm',
         src: 'https://www.manishsundriyal.com/static/e1248839933d4f0af364cad7a3680436/c64b3/asymptotic-notations.webp',
-        link: 'https://www.manishsundriyal.com/dijkstra-algorithm'
-      },
-      {
-        key: 5,
-        title: 'Dijkstra\'s Algorithm',
-        src: 'https://www.manishsundriyal.com/static/b25ed62fb304d89ddf4ec6cb8d561632/c64b3/dijkstra-algorithm.webp',
         link: 'https://www.manishsundriyal.com/dijkstra-algorithm'
       }
     ]

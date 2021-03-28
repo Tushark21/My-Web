@@ -81,9 +81,9 @@ class Me extends React.Component {
                 </div>
                 <h2>Blogs & Snippets</h2>
                 <hr></hr>
-                <Row className="row justify-content-md-center">
+                <div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
                     {this.props.dataList.blogs.map((blog) => <BlogCard key={blog.key} dataObject={blog} />)}
-                </Row>
+                </div>
             </Container >
         );
     }

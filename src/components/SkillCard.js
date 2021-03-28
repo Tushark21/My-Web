@@ -11,7 +11,7 @@ class SkillCard extends React.Component {
                     {this.props.dataObject.catogery}
                 </h2>
                 <hr></hr>
-                <div className="row justify-content-md-center">
+                <div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'center'}}>
                     {this.props.dataObject.skills.map((skill) => <div key={skill.key} style={{margin: '20px'}}><Col><SquareCard skillObject={skill} /></Col></div>)}
                 </div>
             </div>
