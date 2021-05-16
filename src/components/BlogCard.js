@@ -11,10 +11,10 @@ class BlogCard extends React.Component {
                     <p style={{ fontWeight: 'bold' }}>{this.props.dataObject.title}</p>
                     <div style={{ display: 'flex', flexDirection: 'column' }}>
                         <div>
-                            <a href={this.props.dataObject.link} target='_blank'>Medium</a>
+                            <a href={this.props.dataObject.link} target='_blank' rel="noopener noreferrer">Medium</a>
                         </div>
                         <div>
-                            <a href={this.props.dataObject.link} target='_blank'>manishsundriyal.com</a>
+                            <a href={this.props.dataObject.link} target='_blank' rel="noopener noreferrer">manishsundriyal.com</a>
                         </div>
                     </div>
                 </div>

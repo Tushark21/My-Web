@@ -4,9 +4,9 @@ import SkillCard from '../components/SkillCard';
 
 class Skills extends React.Component {
     render() {
-        const items = this.props.dataList.map((data) => <SkillCard key={data.key} dataObject={data} />);
+        const items = this.props.dataList.map((data,i) => <SkillCard key={i} dataObject={data} />);
         return (
-            <PrimaryLayout heading={'SKILLS'}>
+            <PrimaryLayout heading={'🤹‍♂️ SKILLS'}>
                 {items}
             </PrimaryLayout>
         );

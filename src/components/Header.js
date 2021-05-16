@@ -16,13 +16,14 @@ class Header extends React.Component {
                     />{' '}
                     Tushar Gautam</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
+
                 <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
                     <Nav >
-                        <Nav.Link href="/">ME!</Nav.Link>
-                        <Nav.Link href="/education">Education</Nav.Link>
-                        <Nav.Link href="/projects">Projects</Nav.Link>
-                        <Nav.Link href="/skills">Skills</Nav.Link>
-                        <Nav.Link href="/activities">Achievements & Activities</Nav.Link>
+                        <a className="header_link" href="/"> 🙋‍♂️ ME!</a>
+                        <a className="header_link" href="/education"> 📚 Education </a>
+                        <a className="header_link" href="/projects"> 👨‍💻 Projects </a>
+                        <a className="header_link" href="/skills"> 🤹‍♂️ Skills </a>
+                        <a className="header_link" href="/activities"> 🏆 Achievements & Activities </a>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
@@ -35,13 +36,13 @@ export default Header;
 /*
 <Nav className="justify-content-end">
                     <img width="32px" height='32px' href="/home" src={gitLogo} />
-                    <Nav.Link href="/home">GITHUB</Nav.Link>
+                    <a href="/home">GITHUB</a>
 
                     <img width="32px" height='32px' href="/education" src={googleLogo} />
-                    <Nav.Link href="/education">GMAIL</Nav.Link>
+                    <a href="/education">GMAIL</a>
 
                     <img width="32px" height='32px' href="/projects" src={linkedinLogo}></img>
-                    <Nav.Link href="/projects">LINKEDIN</Nav.Link>
+                    <a href="/projects">LINKEDIN</a>
                 </Nav>
 
                 */

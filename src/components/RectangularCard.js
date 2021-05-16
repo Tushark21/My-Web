@@ -18,7 +18,7 @@ class ReactangularCard extends React.Component {
                         </i>
                     </p>
                     <p>
-                        {this.props.dataObject.links.map((link) => <a key={link.key} href={link.link} target="_blank"><span className='ticket_class'>{link.text}</span></a>)}
+                        {this.props.dataObject.links.map((link,i) => <a key={i} href={link.link} target="_blank" rel="noopener noreferrer"><span className='ticket_class'>{link.text}</span></a>)}
                     </p>
                 </div>
 

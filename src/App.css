@@ -84,8 +84,28 @@ from {
 
 .App {
   text-align: center;
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 50px;
   font-family: Roboto;
   background-image: linear-gradient(-225deg, #77FFD2 0%, #6297DB 48%, #1EECFF 100%);
+}
+
+.header_link{
+  color: rgb(192, 191, 191);
+  padding: 5px;
+  padding-left: 5px;
+  text-decoration: none;
+}
+
+.header_link:hover{
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.selected_link{
+  color: white;
 }
 
 .card_class{
@@ -188,9 +208,12 @@ Nav{
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  min-height: 100px;
-  padding: 10px;
+  min-height: 30px;
+  padding: 8px;
   color: white;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
 }
 
 .footer_link_class{
@@ -198,10 +221,10 @@ Nav{
     margin: 4px;
     font-size: 16px;
     background-color: #21212100;
-    color:#888;
+    color:rgb(192, 191, 191);
     font-weight: bold;
 }
 
 .footer_link_class:hover{
-  color: #bbb;
+  color: white;
 }

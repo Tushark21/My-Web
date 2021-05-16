@@ -73,7 +73,7 @@ class Me extends React.Component {
                     </Row>
                     <Row className="row justify-content-md" >
                         <ul>
-                            {this.props.dataList.profiles.map((data) => <a key={data.key} href={data.link} target='_blank'>
+                            {this.props.dataList.profiles.map((data,i) => <a key={i} href={data.link} target='_blank' rel="noopener noreferrer">
                                 <li style={{ listStyleType: 'none', fontSize: '16px', fontWeight: 'bold' }} className='ticket_class'>{data.text}</li>
                             </a>)}
                         </ul>
@@ -82,7 +82,7 @@ class Me extends React.Component {
                 <h2>Blogs & Snippets</h2>
                 <hr></hr>
                 <div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
-                    {this.props.dataList.blogs.map((blog) => <BlogCard key={blog.key} dataObject={blog} />)}
+                    {this.props.dataList.blogs.map((blog,i) => <BlogCard key={i} dataObject={blog} />)}
                 </div>
             </Container >
         );

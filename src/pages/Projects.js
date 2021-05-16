@@ -6,8 +6,8 @@ import ProjectCard from '../components/ProjectCard';
 class Projects extends React.Component {
     render() {
         return (
-            <PrimaryLayout heading={'PROJECTS'}>
-                {this.props.dataList.map((project) => <ProjectCard key={project.key} dataObject={project} />)}
+            <PrimaryLayout heading={'👨‍💻 PROJECTS'}>
+                {this.props.dataList.map((project,i) => <ProjectCard key={i} dataObject={project} />)}
             </PrimaryLayout>
         );
     }
